@@ -65,11 +65,7 @@ App Control: The write_callback function handles commands received from the Rain
 
 
 
-IR Remote: The ir_remote() function decodes IR signals. Pre-defined IR codes (e.g., 
-
-IR_Button_1) can toggle the state of the relays. A separate command (
-
-IR_All_Off) can turn all relays off at once.
+IR Remote: The ir_remote() function decodes IR signals. Pre-defined IR codes (e.g., IR_Button_1) can toggle the state of the relays. A separate command (IR_All_Off) can turn all relays off at once.
 
 
 
