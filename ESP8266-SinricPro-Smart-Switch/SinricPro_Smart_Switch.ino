@@ -7,13 +7,13 @@
 #define RELAY2_PIN 2    // GPIO2
 #define SWITCH_PIN 3    // GPIO3 (RX pin on ESP-01)
 
-const char* ssid = "Mr. Great Guy";
-const char* password = "fahim25j2002";
+const char* ssid = "wifi name";
+const char* password = "password";
 
-const char* APP_KEY = "1279c102-2eec-4e0e-a161-386dd81e009d";
-const char* APP_SECRET = "88a3a61f-0d53-435a-8c56-0719e87a8e94-e9e2bef2-a78f-4423-842f-f6d53db93dcb";
-const char* device1_ID = "67fd545fdc4a25d5c3af97ce";
-const char* device2_ID = "67fd5487bddfc53e33d772f6";
+const char* APP_KEY = " ";
+const char* APP_SECRET = " ";
+const char* device1_ID = " ";
+const char* device2_ID = " ";
 
 bool relay1State = false;
 bool relay2State = false;
