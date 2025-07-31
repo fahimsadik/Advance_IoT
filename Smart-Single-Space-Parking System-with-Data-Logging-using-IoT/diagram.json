@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "author": "Faisal ahmed",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -57.6, "left": -43.16, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -171.3, "left": -176.9, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -109.2,
+      "left": 176.6,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -109.2,
+      "left": 272.6,
+      "attrs": { "color": "green" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ultrasonic1:TRIG", "esp:12", "green", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "esp:13", "green", [ "v0" ] ],
+    [ "ultrasonic1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "ultrasonic1:VCC", "esp:5V", "red", [ "v0" ] ],
+    [ "led1:C", "ultrasonic1:GND", "green", [ "v-9.6", "h-268.4", "v-9.6" ] ],
+    [ "led2:C", "led1:C", "green", [ "v9.6", "h-95.6" ] ],
+    [ "led1:A", "esp:2", "green", [ "v0" ] ],
+    [ "led2:A", "esp:0", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
